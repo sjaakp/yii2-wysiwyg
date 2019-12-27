@@ -65,7 +65,9 @@ class Wysiwyg extends InputWidget
             }
         }
 
-        $id = $this->getId();
+        $view->registerCss('.wysiwyg{height: auto;}');  // neutralize height setting of class 'form-control'
+
+        $id = $this->options['id'];
 
         $opts = empty($this->redactorOptions) ? '' : Json::encode($this->redactorOptions);
         $view->registerJs("\$R('#$id textarea',$opts);");

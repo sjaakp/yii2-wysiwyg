@@ -65,8 +65,6 @@ class Wysiwyg extends InputWidget
             }
         }
 
-        $view->registerCss('.wysiwyg{height: auto;}');  // neutralize height setting of class 'form-control'
-
         $id = $this->options['id'];
 
         $opts = empty($this->redactorOptions) ? '' : Json::encode($this->redactorOptions);
@@ -75,6 +73,7 @@ class Wysiwyg extends InputWidget
         $ta = is_null($this->model) ? Html::textarea($this->name, $this->value)
             : Html::activeTextarea($this->model, $this->attribute);
 
+        Html::removeCssClass($this->options, 'form-control');
         Html::addCssClass($this->options, 'wysiwyg');
 
         echo Html::tag('div', $ta, $this->options);

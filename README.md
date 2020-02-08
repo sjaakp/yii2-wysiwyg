@@ -12,7 +12,7 @@ This is a wrapper for the excellent [Imperavi Redactor](http://imperavi.com/reda
 [Yii 2.0](https://yiiframework.com/ "Yii") PHP Framework. It automatically loads
 any [Redactor plugin](https://imperavi.com/redactor/plugins/) needed.
 
-A demonstration of **yii2-wysiwyg** is [here](https://sjaakpriester.nl/software/yii2-wysiwyg).
+A demonstration of **yii2-wysiwyg** is [here](https://sjaakpriester.nl/software/wysiwyg).
 
 ## Installation ##
 
